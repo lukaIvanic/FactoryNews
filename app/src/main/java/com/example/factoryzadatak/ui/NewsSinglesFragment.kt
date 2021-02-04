@@ -15,7 +15,7 @@ import com.example.factoryzadatak.viewmodel.NewsViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class NewsSinglesFragment : Fragment(R.layout.fragment_news_details) {
+class NewsSinglesFragment : Fragment(R.layout.fragment_news_singles) {
 
     private val newsViewModel: NewsViewModel by viewModels()
     private val args: NewsSinglesFragmentArgs by navArgs()

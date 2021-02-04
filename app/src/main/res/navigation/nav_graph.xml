@@ -22,7 +22,7 @@
         android:id="@+id/detailsFragment"
         android:label="{title}"
         android:name="com.example.factoryzadatak.ui.NewsSinglesFragment"
-        tools:layout="@layout/fragment_news_details">
+        tools:layout="@layout/fragment_news_singles">
         <argument
             android:name="position"
             android:defaultValue="0"

@@ -18,7 +18,7 @@ class ViewPagerAdapter : ListAdapter<NewsArticle, ViewPagerAdapter.VPViewHolder>
 
         fun bind(newsArticle: NewsArticle) {
             binding.apply {
-                viewPagerTextview.text = newsArticle.title
+                newsSingleTitle.text = newsArticle.title
                 viewPagerDescription.text = newsArticle.description
                 Glide.with(itemView)
                     .load(newsArticle.urlToImage)

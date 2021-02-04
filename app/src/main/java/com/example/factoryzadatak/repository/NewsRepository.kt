@@ -37,7 +37,6 @@ class NewsRepository @Inject constructor(
                         val newsArticles: List<NewsArticle> = newsDao.getRecentNews(fiveMinsAgo)
                         if (!newsArticles.isNullOrEmpty()) {
                             withContext(Main) {
-                                Log.i("Getting", "from db")
                                 value = newsArticles
                                 apiJob.complete()
                                 cancel()
@@ -55,7 +54,6 @@ class NewsRepository @Inject constructor(
                             // Caching
                             newsDao.insertNews(newsResponse.articles)
                             withContext(Main) {
-                                Log.i("Getting", "from api")
                                 value = newsResponse.articles
                                 apiJob.complete()
                             }
