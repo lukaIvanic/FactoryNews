@@ -35,7 +35,7 @@ class NewsSinglesFragment : Fragment(R.layout.fragment_news_singles) {
                 (activity as MainActivity).errorPopup()
             } else if (adapter.currentList != news) {
                 adapter.submitList(news)
-                viewPager.currentItem = args.position
+                viewPager.setCurrentItem(args.position, false)
             }
         })
 
